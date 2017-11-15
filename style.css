@@ -1,0 +1,48 @@
+body {
+background-image: url(image/desktop-background.png);}
+
+table {
+font-family: roboto,noto,helvetica,ariel,sans-serif;
+font-size: 1.2em;
+background-color: #fffafafa;}
+
+td.LH {
+height: 150px;
+width: 150px;
+border-bottom:solid 1px #abddf1; 
+border-top:solid 1px #e0e0e0; 
+border-left:solid 1px #e0e0e0;}
+
+td.LC {
+width: 150px;
+border-bottom:solid 1px #abddf1;
+border-left:solid 1px #e0e0e0;}
+
+td.LF {
+width: 150px;
+border-bottom:solid 1px #e0e0e0; 
+border-left:solid 1px #e0e0e0;}
+
+td.RH {
+height: 150px;
+width: 840px;
+border-bottom:solid 1px #abddf1; 
+border-top:solid 1px #e0e0e0; 
+border-right:solid 1px #e0e0e0;
+border-left:solid 1px #f9172d;}
+
+td.RC {
+width: 840px;
+border-bottom:solid 1px #abddf1;
+border-right:solid 1px #e0e0e0;
+border-left:solid 1px #f9172d;}
+
+td.RF {
+width: 840px;
+border-bottom:solid 1px #e0e0e0;
+border-right:solid 1px #e0e0e0;
+border-left:solid 1px #f9172d;}
+
+
+
+
