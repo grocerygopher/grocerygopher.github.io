@@ -6,6 +6,20 @@ font-family: roboto,noto,helvetica,ariel,sans-serif;
 font-size: 1.2em;
 background-color: #fffafafa;}
 
+td.TH { 
+color: #000F55;
+font-size: 2em;
+font-style: bold;
+text-align: left;
+vertical-align: bottom;}
+
+td.SH { 
+color: #757575;
+font-size: 0.833em;
+text-align: left;
+padding-left: 0.2em;
+vertical-align: top;}
+
 td.LH {
 height: 150px;
 width: 150px;
@@ -26,6 +40,7 @@ border-left:solid 1px #e0e0e0;}
 td.RH {
 height: 150px;
 width: 840px;
+padding-left: 1em;
 border-bottom:solid 1px #abddf1; 
 border-top:solid 1px #e0e0e0; 
 border-right:solid 1px #e0e0e0;
