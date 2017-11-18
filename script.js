@@ -1,13 +1,17 @@
-function showPrivacy() {
-    document.getElementById("contentTitle").innerHTML = "Privacy Policy";
+function showContent(sPage, sTitle) {
 
-var xhr= new XMLHttpRequest();
-xhr.open('GET', 'cPrivacy.html', true);
-xhr.onreadystatechange= function() {
-    if (this.readyState!==4) return;
-    if (this.status!==200) return; // or whatever error handling you want
-    document.getElementById('contentBody').innerHTML= this.responseText;
-};
-xhr.send();
+    var sPage = sPage + ".html";   
+    var xhr= new XMLHttpRequest();
 
+    document.getElementById("contentTitle").innerHTML = sTitle;
+    xhr.open('GET', sPage, true);
+
+    xhr.onreadystatechange= function() {
+        if (this.readyState!==4) return;
+        if (this.status!==200) return; //Error Handling
+        document.getElementById('contentBody').innerHTML= this.responseText;};
+
+    xhr.send();
 }
+
+document.addEventListener('DOMContentLoaded', function() {showContent('cHome','Grocery Gopher Home');}, false);

@@ -3,7 +3,7 @@ background-image: url(image/desktop-background.png);}
 
 #container {
 position: relative;
-width: 1000px ;
+width: 1054px ;
 margin-left: auto ;
 margin-right: auto ;}
 
@@ -13,13 +13,13 @@ position: absolute;}
 #title {
 position: absolute;
 float: center;
-margin-top: 190px;
+margin-top: 198px;
 margin-left: 170px;}
 
 #content {
 position: absolute;
 float: center;
-margin-top: 232px;
+margin-top: 240px;
 margin-left: 170px;}
 
 table {
@@ -71,6 +71,29 @@ td.lBody {
 background-image: url(image/bpx.png);
 border-bottom:solid 1px #abddf1;
 border-left:solid 1px #e0e0e0;}
+
+td.lLink {
+background-image: url(image/bpx.png);
+font-size: 0.833em;
+padding-left: 1em;
+border-bottom:solid 1px #abddf1;
+border-left:solid 1px #e0e0e0;}
+
+a:link {
+color: #000F55;
+text-decoration: none;}
+
+a:visited {
+color: #000F55;
+text-decoration: none;}
+
+a:hover {
+color: #000F55;
+text-decoration: none;}
+
+a:active {
+color: #757575;
+text-decoration: none;}
 
 td.rBody {
 background-image: url(image/bpx.png);
