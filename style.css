@@ -10,17 +10,29 @@ margin-right: auto ;}
 #notebook {
 position: absolute;}
 
+#header {
+position: absolute;
+float: center;
+margin-top: 80px;
+margin-left: 202px;}
+
 #title {
 position: absolute;
 float: center;
 margin-top: 198px;
-margin-left: 170px;}
+margin-left: 202px;}
 
 #content {
 position: absolute;
 float: center;
 margin-top: 240px;
-margin-left: 170px;}
+margin-left: 202px;}
+
+img.leftFloat {
+float: left;
+padding: 16px;
+border: 1px dotted black;
+margin: 16px 20px 0px 0px;}
 
 table {
 border: 0px;
@@ -115,13 +127,13 @@ border-left:solid 1px #f9172d;}
 td.rTitleFloat {
 background-image: url(image/tpx.png);
 font-weight: bold; 
-padding-left: 1em;}
+padding-left: 0em;}
 
 td.rContentFloat {
 height: 944px;
 line-height: 1.67;
 background-image: url(image/fpx.png);
-padding-left: 1em;}
+padding-left: 0em;}
 
 div.scrollable {
 width: 100%;
