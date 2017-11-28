@@ -42,6 +42,11 @@ margin-left: 202px;}
     -webkit-box-shadow: inset 0 0 6px rgba(171,221,241,0.7); 
 }
 
+img.grade {
+float:right;
+vertical-align: center;
+padding-right: 96px;}
+
 div.leftFloat {
 position: relative;
 float: left;
@@ -82,6 +87,7 @@ td.rHeader {
 height: 160px;
 padding-left: 1em;
 background-image: url(image/bpx.png);
+
 vertical-align: bottom;
 border-bottom:solid 1px #abddf1; 
 border-top:solid 1px #e0e0e0; 

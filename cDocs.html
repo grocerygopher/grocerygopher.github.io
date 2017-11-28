@@ -5,22 +5,66 @@
     <title>cHome</title>
 
 <style type="text/css">
-img.leftFloat2 {
+
+div.left {
+position: relative;
+float: left;
+padding-left: 16px;
+z-index: 1;}
+
+div.right {
+position: relative;
+float: left;
+padding-left: 48px;
+padding-top: 16px;
+z-index: 1;}
+
+img.left {
 position: absolute;
 top: 47px;
-left: 23px;
+left: 39px;
 padding: 0px;
 z-index: 2;}
+
+img.button {
+position: absolute;
+top: 451px;
+left: 40px;
+padding: 0px;
+z-index: 3;}
 
 </style>
 
   </head>
   <body>
-    <div class="leftFloat"><img id="phone" src="image/phone.png">
-        <img id="phoneFloat" class="leftFloat2" src="image/pList.png"></div>
-    <div><strong>Shopping List</strong></p>
-        <p>The "Shopping List" is the first of two primary views displayed by the
-        Grocery Gopher app. </div>
+    <div class="left"><img id="phone" src="image/phone.png">
+        <img id="phone2" class="left" src="image/tpx.png">
+        <img id="phone3" class="button" src="image/tpx.png"></div>
+    <div class="right"><strong>Controls</strong>
+    <ul>
+      <li>
+        <p><a href="javascript:void(0);" onclick="shopping()">Shopping List</a></p>
+      </li>
+      <li>
+        <p><a href="javascript:void(0);" onclick="pantry()">Pantry - All Groceries</a></p>
+      </li>
+      <li>
+        <p><a href="javascript:void(0);" onclick="pantry()">Adding Groceries</a></p>
+      </li>
+      <li>
+        <p><a href="javascript:void(0);" onclick="pantry()">Editing Groceries</a></p>
+      </li>
+      <li>
+        <p><a href="javascript:void(0);" onclick="pantry()">Deleting Groceries</a></p>
+      </li>
+      <li>
+        <p><a href="javascript:void(0);" onclick="pantry()">Sharing Your Shopping List</a></p>
+      </li>
+      <li>
+        <p><a href="javascript:void(0);" onclick="pantry()">Settings</a></p>
+      </li>
+    </ul>
+ </div>
 
 
 
