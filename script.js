@@ -26,17 +26,11 @@ function showContent(sPage, sTitle) {
 
 document.addEventListener('DOMContentLoaded', function() {showContent('cHome','Grocery Gopher Home');}, false);
 
-function shopping() {
+function phoneImg(sNav) {
 
-    document.getElementById("phone2").src="image/tpx.png";
-    document.getElementById("phone3").src="image/tpx.png";
+    var sSrc = "image/" + sNav + ".png";
 
-}
-
-function pantry() {
-
-    document.getElementById("phone2").src="image/pList.png";
-    document.getElementById("phone3").src="image/less_than.png";
+    document.getElementById("phoneOvr").src=sSrc;
 
 }
 
