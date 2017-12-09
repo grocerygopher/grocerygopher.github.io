@@ -33,6 +33,10 @@ left: 31px;
 padding: 0px;
 z-index: 3;}
 
+p.sub {
+margin: 0;
+padding: 0;
+border: 0;}
 
 </style>
 
@@ -40,28 +44,28 @@ z-index: 3;}
   <body>
     <div class="left"><img id="phone" src="image/phone.png">
         <img id="phoneOvr" class="over" src="image/tpx.png"></div>
-    <div class="right"><strong>Controls</strong>
+    <div class="right"><strong>Topics</strong>
     <ul>
       <li>
-        <p><a href="javascript:void(0);" onclick="phoneImg('tpx')">Shopping List</a></p>
+        <p><a id='a1' href="javascript:void(0);" onclick="phoneImg('tpx','0')">Shopping List</a></p>
       </li>
       <li>
-        <p><a href="javascript:void(0);" onclick="phoneImg('pantry')">Pantry - All Groceries</a></p>
+        <p class='sub' ><a id='a2' href="javascript:void(0);" onclick="phoneImg('pantry','0')">Pantry - All Groceries</a>
+        <div id='a2sub' style='display: none;'>      
+        <a href="javascript:void(0);" onclick="phoneImg('pantry','0')"> - Setup and Connecting</a><br>
+        <a href="javascript:void(0);" onclick="phoneImg('pantry','0')"> - Sharing and Synchronizing</a></div></p>
       </li>
       <li>
-        <p><a href="javascript:void(0);" onclick="phoneImg('add')">Adding Groceries</a></p>
+        <p><a id='a3' href="javascript:void(0);" onclick="phoneImg('add','0')">Adding Groceries</a></p>
       </li>
       <li>
-        <p><a href="javascript:void(0);" onclick="phoneImg('edit')">Editing Groceries</a></p>
+        <p><a id='a4' href="javascript:void(0);" onclick="phoneImg('edit','0')">Editing Groceries</a></p>
       </li>
       <li>
-        <p><a href="javascript:void(0);" onclick="phoneImg('delete')">Deleting Groceries</a></p>
+        <p><a id='a5' href="javascript:void(0);" onclick="phoneImg('delete','0')">Deleting Groceries</a></p>
       </li>
       <li>
-        <p><a href="javascript:void(0);" onclick="phoneImg('tpx')">Sharing Your Shopping List</a></p>
-      </li>
-      <li>
-        <p><a href="javascript:void(0);" onclick="phoneImg('tpx')">Settings</a></p>
+        <p><a id='a6' href="javascript:void(0);" onclick="phoneImg('settings','2')">Settings</a></p>
       </li>
     </ul>
  </div>
