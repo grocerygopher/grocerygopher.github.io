@@ -35,6 +35,8 @@ function phoneImg(sNav,sPage) {
     } else return;
     
     if (sPage == '1') {
+
+        document.getElementById('a6a7').style.display='inline';
         
         document.getElementById('a1').text='Shopping List';
         document.getElementById('a1').onclick=function () {
@@ -66,60 +68,70 @@ function phoneImg(sNav,sPage) {
             return false;
         };
 
-        document.getElementById('a6').text='Settings';
+        document.getElementById('a6').text='Rate Me Please!';
         document.getElementById('a6').onclick=function () {
+            phoneImg('rate','0');
+            return false;
+        };
+
+        document.getElementById('a7').text='Settings';        
+        document.getElementById('a7').onclick=function () {
             phoneImg('settings','2');
             return false;
         };
     }
 
     if (sPage == '2') {
+
+        document.getElementById('a6a7').style.display='none';
         
         document.getElementById('a1').text='General Settings';
         document.getElementById('a1').onclick=function () {
             phoneImg('settings','0');
-            document.getElementById('a2').text='Google Drive Sharing';
+            document.getElementById('a2').text='Sharing Your List';
             document.getElementById('a2sub').style.display='none';
+            document.getElementById('a3').text='Department Manager';
+            document.getElementById('a3sub').style.display='none';
             return false;
         };
 
-        document.getElementById('a2').text='Google Drive Sharing';
+        document.getElementById('a2').text='Sharing Your List';
         document.getElementById('a2').onclick=function () {
             phoneImg('drive-depts','0');
-            document.getElementById('a2').text='Google Drive Sharing:';
+            document.getElementById('a2').text='Sharing Your List:';
             document.getElementById('a2sub').style.display='inline';
+            document.getElementById('a3').text='Department Manager';
+            document.getElementById('a3sub').style.display='none';
             return false;
         };
 
         document.getElementById('a3').text='Department Manager';
         document.getElementById('a3').onclick=function () {
             phoneImg('drive-depts','0');
-            document.getElementById('a2').text='Google Drive Sharing';
+            document.getElementById('a2').text='Sharing Your List';
             document.getElementById('a2sub').style.display='none';
+            document.getElementById('a3').text='Department Manager:';
+            document.getElementById('a3sub').style.display='inline';
             return false;
         };
 
         document.getElementById('a4').text='External Storage';
         document.getElementById('a4').onclick=function () {
             phoneImg('storage','0');
-            document.getElementById('a2').text='Google Drive Sharing';
+            document.getElementById('a2').text='Sharing Your List';
             document.getElementById('a2sub').style.display='none';
+            document.getElementById('a3').text='Department Manager';
+            document.getElementById('a3sub').style.display='none';
             return false;
         };
 
         document.getElementById('a5').text='Pantry - All Groceries';
         document.getElementById('a5').onclick=function () {
-            document.getElementById('a2').text='Google Drive Sharing';
+            document.getElementById('a2').text='Sharing Your List';
             document.getElementById('a2sub').style.display='none';
             phoneImg('pantry','1');
-            return false;
-        };
-
-        document.getElementById('a6').text='Rate Me Please!';
-        document.getElementById('a6').onclick=function () {
-            phoneImg('rate','0');
-            document.getElementById('a2').text='Google Drive Sharing';
-            document.getElementById('a2sub').style.display='none';
+            document.getElementById('a3').text='Department Manager';
+            document.getElementById('a3sub').style.display='none';
             return false;
         };
 
