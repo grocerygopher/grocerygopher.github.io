@@ -22,6 +22,12 @@ float: center;
 margin-top: 198px;
 margin-left: 202px;}
 
+#name {
+position: absolute;
+float: center;
+margin-top: 170px;
+margin-left: 202px;}
+
 #content {
 position: absolute;
 float: center;
