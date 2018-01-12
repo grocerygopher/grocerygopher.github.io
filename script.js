@@ -45,6 +45,10 @@ function phoneImg(sId,sNav,sPage) {
 
     var sSrc = "image/" + sNav + ".png";
 
+    if (sNav == 'share' || sNav == 'depts') {
+        sSrc = "image/drive-depts.png";
+    }
+
     var iSrc = document.getElementById("phoneOvr").getAttribute("src");
     if (sSrc != iSrc) {
         clearStyle();
@@ -128,7 +132,7 @@ function phoneImg(sId,sNav,sPage) {
             document.getElementById('a3').text='Department Manager';
             document.getElementById('a3').style.color='#000000';
             document.getElementById('a3sub').style.display='none';
-            phoneImg('a2','drive-depts','0');
+            phoneImg('a2','share','0');
             return false;
         };
 
@@ -140,7 +144,7 @@ function phoneImg(sId,sNav,sPage) {
             document.getElementById('a3').text='Department Manager:';
             document.getElementById('a3').style.color='#cc0000';
             document.getElementById('a3sub').style.display='inline';
-            phoneImg('a3','drive-depts','0');
+            phoneImg('a3','depts','0');
             return false;
         };
 
