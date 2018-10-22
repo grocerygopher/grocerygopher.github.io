@@ -1,9 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.engen.grocerygopher",
-    "sha256_cert_fingerprints":
-    ["32:52:01:65:16:A8:CF:A1:F6:54:73:11:F6:01:30:FF:A0:BB:FF:F3:D8:A5:B8:AB:D8:80:B5:9F:F5:C0:21:BD"]
-  }
-}]
